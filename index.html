@@ -22,6 +22,12 @@ body {font-size:14px;}
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
+#pli {
+	color: rgb(0, 0, 0);
+	font-family: Poppins;
+	font-size: 18px;
+	padding-top: 2px;
+}
 
 /* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
@@ -56,7 +62,7 @@ body {font-size:14px;}
 <!-- Top menu on small screens BURGER -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>Maestria Quantitative Research</span>
+  <span style="font-size:14px;">Maestria Quantitative Research</span>
 </header>
 
 
@@ -67,14 +73,16 @@ body {font-size:14px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
+  <div class="w3-container w3-hide-small" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo"><b>Innovative and Efficient</b></h1>
-
   </div>
-  
+  <div class="w3-container w3-hide-medium w3-hide-large" style="margin-top:100px" id="showcase">
+    <h1 class="w3-xlarge"><b>Innovative and Efficient</b></h1>
+  </div>
+
   <div class="w3-card-4 w3-margin w3-white">
 	<header class="w3-container w3-left-align">
-	    <h1 class="w3-xlarge w3-text-red"><br><b>Mission.</b></h1>
+	    <h1 class="w3-large w3-text-red"><br><b>Mission.</b></h1>
 	</header>
 	<div class="w3-container w3-text-black w3-left-align">
 		<p>
@@ -104,9 +112,13 @@ body {font-size:14px;}
   <div class="w3-row-padding">
     <div class="w3-col m6 w3-margin-bottom">	
 		<div class="w3-card-4">
-			<header class="w3-container w3-left-align w3-text-black">
-			<h3>Treasury Yield 30 Years (TYX)<br><br></h3>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Treasury Yield 30 Years (TYX)<br><br></h3>			
 			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Treasury Yield 30 Years (TYX)<br><br></p>			
+			</header>
+
 			<div style="margin-left:20px" >			
 		<center>
 		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfkvfHPfPgo_JlnTCg?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
@@ -129,8 +141,11 @@ body {font-size:14px;}
 
     <div class="w3-col m6 w3-margin-bottom">	
 		<div class="w3-card-4">
-			<header class="w3-container w3-left-align w3-text-black">
-			<h3>Currencies (USD-CAD) (USD-GBP)<br><br></h3>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3> Currencies (USD-CAD) (USD-GBP) <br><br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">  Currencies (USD-CAD) (USD-GBP)  <br><br></p>			
 			</header>
 			<div style="margin-left:20px" >
 			<center>
@@ -156,8 +171,11 @@ body {font-size:14px;}
   <div class="w3-row-padding">
     <div class="w3-col m6 w3-margin-bottom">	
 		<div class="w3-card-4">
-			<header class="w3-container w3-left-align w3-text-black">
-			<h3>Bitcoin USD (BTC-USD) <br><br></h3>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3> Bitcoin USD (BTC-USD) <br><br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">  Bitcoin USD (BTC-USD)  <br><br></p>			
 			</header>
 			<div style="margin-left:20px" >
 			<center>					
@@ -180,8 +198,11 @@ body {font-size:14px;}
 
     <div class="w3-col m6 w3-margin-bottom">	
 		<div class="w3-card-4">
-			<header class="w3-container w3-left-align w3-text-black">
-			<h3>SPDR Gold Shares (GLD) <br><br></h3>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3> SPDR Gold Shares (GLD) <br><br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">  SPDR Gold Shares (GLD)  <br><br></p>			
 			</header>
 			<div style="margin-left:20px" >
 			<center>
@@ -208,11 +229,17 @@ body {font-size:14px;}
 	
     <div class="w3-col m6 w3-margin-bottom">	
 		<div class="w3-card-4">
-			<header class="w3-container w3-left-align w3-text-black">
-			<h3>NYA Composite (NYA) <br>
-			NASDAQ 100 (NDX) <br>
-			NIKKEI 225 (N225) <br><br></h3>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3> NYA Composite (NYA) <br>
+					NASDAQ 100 (NDX) <br>
+					NIKKEI 225 (N225)  <br><br></h3>			
 			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">  NYA Composite (NYA) <br>
+					NASDAQ 100 (NDX) <br>
+					NIKKEI 225 (N225)   <br><br></p>			
+			</header>
+
 			<div style="margin-left:20px" >
 		<center>
 		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfkxSdC6rkoPb370Mg?embed=1&width=478&height=353" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
@@ -230,8 +257,12 @@ body {font-size:14px;}
 	
     <div class="w3-col m6 w3-margin-bottom">	
 		<div class="w3-card-4">
-			<header class="w3-container w3-left-align w3-text-black">
-			<h3>Apple (APPL) and Cisco (CSCO) <br><br></h3>
+
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3> Apple (APPL) and Cisco (CSCO) <br><br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">  Apple (APPL) and Cisco (CSCO)  <br><br></p>			
 			</header>
 			<div style="margin-left:20px" >
 				<center>	
@@ -253,8 +284,11 @@ body {font-size:14px;}
   <div class="w3-row-padding">
     <div class="w3-col m6 w3-margin-bottom">	
 		<div class="w3-card-4">
-			<header class="w3-container w3-left-align w3-text-black">
-			<h3>Chevron (CVX) <br><br></h3>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3> Chevron (CVX) <br><br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">  Chevron (CVX)  <br><br></p>			
 			</header>
 			<div style="margin-left:20px" >
 				<center>
@@ -273,8 +307,11 @@ body {font-size:14px;}
 
     <div class="w3-col m6 w3-margin-bottom">	
 		<div class="w3-card-4">
-			<header class="w3-container w3-left-align w3-text-black">
-			<h3>ROSS Stores (ROST) <br><br></h3>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3> ROSS Stores (ROST) <br><br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">  ROSS Stores (ROST)  <br><br></p>			
 			</header>
 			<div style="margin-left:20px" >
 				<center>
