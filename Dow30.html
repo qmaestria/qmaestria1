@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DOW 30
+</title>
+<link rel="icon" type="image/x-icon" href="./Images/qm1.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:14px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+#pli {
+	color: rgb(0, 0, 0);
+	font-family: Poppins;
+	font-size: 18px;
+	padding-top: 2px;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  height: 505px;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Maestria<br>Quantitative<br>Research</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="./Tutor.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tutorial</a> 
+    <a href="./Dow30.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DOW 30</a>	
+    <a href="./Services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services/Contact</a> 	
+    <a href="./Disclaimer.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Disclaimer</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens BURGER -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span style="font-size:14px;">Maestria Quantitative Research</span>
+</header>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container w3-hide-small" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Dow Jones 30 Components</b></h1>
+  </div>
+  <div class="w3-container w3-hide-medium w3-hide-large" style="margin-top:100px" id="showcase">
+    <h1 class="w3-xlarge"><b>Dow Jones 30 Components</b></h1>
+  </div>
+
+<br><br>
+<p style="text-align: left; padding-left: 30px;"> As of January 10, 2025</p>
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Amazon.com Inc (AMZN)<br>
+				American Express Co (AXP)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Amazon.com Inc (AMZN)<br>
+				American Express Co (AXP) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoT_1XDg0nr8fgfVA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoT_1XDg0nr8fgfVA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoVBTZuRc8RVLszTA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoVBTZuRc8RVLszTA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Amgen Inc (AMGN)<br>
+				Apple Inc (AAPL)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Amgen Inc (AMGN)<br>
+				Apple Inc (AAPL) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoQY1vnKptoTF9qgQ?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoQY1vnKptoTF9qgQ?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoPgaWGFvG0p4jQCg?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoPgaWGFvG0p4jQCg?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>		
+	
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Boeing Co (BA)<br>
+				Caterpillar Inc (CAT)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Boeing Co (BA)<br>
+				Caterpillar Inc (CAT) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoNug0w5Xam5qNHng?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoNug0w5Xam5qNHng?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoRatvEVUg1WRhJ0A?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoRatvEVUg1WRhJ0A?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Cisco Systems Inc (CSCO)<br>
+				Chevron Corp (CVX)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Cisco Systems Inc (CSCO)<br>
+				Chevron Corp (CVX) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoMx9rYLBvj2ciZgg?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoMx9rYLBvj2ciZgg?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoObYIaHtgr89SQdw?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoObYIaHtgr89SQdw?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+  </div>
+  
+
+  <div class="w3-row-padding">
+	
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Goldman Sachs Group Inc (GS)<br>
+				Home Depot Inc (HD)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Goldman Sachs Group Inc (GS)<br>
+				Home Depot Inc (HD) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoLbl9abX7RF1lRfg?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoLbl9abX7RF1lRfg?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoJE5O1iEsYrv1mmw?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoJE5O1iEsYrv1mmw?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+	
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Honeywell International Inc (HON)<br>
+				International Business Machines Corp (IBM)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Honeywell International Inc (HON)<br>
+				International Business Machines Corp(IBM) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoHEKljOY2JgLT_aA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoHEKljOY2JgLT_aA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoKMvN_VUwSuw0u7A?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoKMvN_VUwSuw0u7A?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+  </div>
+
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Johnson & Johnson (JNJ)<br>
+				Coca-Cola Co (KO)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Johnson & Johnson (JNJ)<br>
+				Coca-Cola Co (KO) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoGApOEGUe_yoTtfw?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoGApOEGUe_yoTtfw?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoFc9ypzP4pbNhqVA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoFc9ypzP4pbNhqVA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>JPMorgan Chase & Co (JPM)<br>
+				McDonald’s Corp (MCD)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">JPMorgan Chase & Co (JPM)<br>
+				McDonald’s Corp (MCD) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoIXWh6xkfKbQPeMA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoIXWh6xkfKbQPeMA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoDgneNJ4LuztOptA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoDgneNJ4LuztOptA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>3M Co (MMM)<br>
+				Merck & Co Inc (MRK)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">3M Co (MMM)<br>
+				Merck & Co Inc (MRK) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoCUKnl4gsUUS1kAQ?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoCUKnl4gsUUS1kAQ?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoE6TRBJVmNQaen4w?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoE6TRBJVmNQaen4w?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Microsoft Corp (MSFT)<br>
+				Nike Inc (NKE)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Microsoft Corp (MSFT)<br>
+				Nike Inc (NKE) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoAE8pswQJyMWFJMg?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoAE8pswQJyMWFJMg?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoBaTz4QHHzP70RYA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoBaTz4QHHzP70RYA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Procter & Gamble Co (PG)<br>
+				Sherwin-Williams Co (SHW)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Procter & Gamble Co (PG)<br>
+				Sherwin-Williams Co (SHW) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl-8IFZDAXXVVsUyg?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl-8IFZDAXXVVsUyg?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoU7-8RF2t1lAlX7g?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoU7-8RF2t1lAlX7g?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Travelers Companies Inc (TRV)<br>
+				Unitedhealth Group Inc (UNH)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Travelers Companies Inc (TRV)<br>
+				Unitedhealth Group Inc (UNH) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoSYubZqFLlZ9LvOA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoSYubZqFLlZ9LvOA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl_sAxD54uIksdPxA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl_sAxD54uIksdPxA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Salesforce Inc (CRM)<br>
+				NVIDIA Corp (NVDA)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Salesforce Inc (CRM)<br>
+				NVIDIA Corp (NVDA) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl9BX554rQMPiAmeA?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl9BX554rQMPiAmeA?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl7ohIyPPSHtKhbUg?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl7ohIyPPSHtKhbUg?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Verizon Communications Inc (VZ)<br>
+				Visa Inc (V)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Verizon Communications Inc (VZ)<br>
+				Visa Inc (V) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl8Gv0q2EbgE4GhSw?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfl8Gv0q2EbgE4GhSw?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoXdes3-h51l6xgzg?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoXdes3-h51l6xgzg?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">	
+		<div class="w3-card-4">
+			<header class="w3-container w3-left-align w3-text-black w3-hide-small">
+				<h3>Walmart Inc (WMT)<br>
+				Walt Disney Co DIS)
+				<br></h3>			
+			</header>
+			<header class="w3-container w3-left-align w3-text-black w3-hide-large w3-hide-medium">
+				<p id="pli">Walmart Inc (WMT)<br>
+				Walt Disney Co DIS) <br> </p>			
+			</header>
+
+			<div style="margin-left:20px" >			
+		<center>
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoY7WVNv2BeYJzvZQ?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoY7WVNv2BeYJzvZQ?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoWAGywFNfas9dwPw?embed=1&width=276&height=471" class="w3-image w3-hide-small w3-hide-medium"   onclick="onClick(this)" />
+		<img src="https://1drv.ms/i/s!AgUn9ytUVkSqgfoWAGywFNfas9dwPw?embed=1&width=276&height=471" class="w3-image w3-hide-large"  width="45%" onclick="onClick(this)" />
+		</center>						
+			</div>	
+			<br>
+		</div>	
+	</div>	
+
+  </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px; font-size:10px;">
+<p>
+THIS SITE IS NOT INTENDED FOR THE GENERAL PUBLIC OR FOR INVESTORS THAT DO NOT RESIDE IN CANADA. THIS SITE IS INTENDED ONLY FOR CANADIAN INSTITUTIONAL INVESTORS. BY ACCEPTING THIS TERMS OF USE AGREEMENT YOU CONFIRM THAT, UNDER THE SECURITIES LEGISLATION OF YOUR PROVINCE OF RESIDENCE, YOU QUALIFY AS:
+(I) AN “ACCREDITED INVESTOR” WITHIN THE MEANING OF NATIONAL INSTRUMENT 45-106 PROSPECTUS AND REGISTRATION EXEMPTIONS; AND/OR
+(II) A “PERMITTED CLIENT” WITHIN THE MEANING OF NATIONAL INSTRUMENT 31-103 REGISTRATION REQUIREMENTS, EXEMPTIONS AND ONGOING REGISTRANT OBLIGATIONS.
+<br><br>
+Disclaimer: The content on this site is provided as general information only and should not be taken as investment advice. All site content, including, but not limited to: forum comments by the author or other posters, articles and charts, advertisements, and everything else on this site, shall not be construed as a recommendation to buy or sell any security or financial instrument, or to participate in any particular trading or investment strategy. The author may or may not have a position in any company or advertiser referenced above. Any action that you take as a result of information, analysis, or advertisement on this site is ultimately your responsibility. Consult your investment advisor before making any investment decisions.
+</p>
+
+</div>
+ 
+ <!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
+ 
