@@ -2,18 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>DOW 30
-</title>
+<title>DOW 30</title>
 <link rel="icon" type="image/x-icon" href="./Images/mas5.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+
   
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -42,16 +42,7 @@ body {font-size:14px;}
 	padding-top: 2px;
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
-  position: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 45%;
-  height: 505px;
-}
+
 
 
 </style>
@@ -64,7 +55,7 @@ body {font-size:14px;}
   <br><br>
   <div class="w3-container">
   		<img src="./Images/mas5.bmp" class="w3-image w3-hide-small w3-hide-medium"  style="width:45%;margin:auto;" />	
-		<img src="./Images/mas5.bmp" class="w3-image w3-hide-large" style="width:45%;" />		
+		<img src="./Images/mas5.bmp" class="w3-image w3-hide-large" style="width:45%;" />	
     <h3 class="w3-padding-64"><b>Maestria<br>Quantitative<br>Research</b></h3>
   </div>
   <div class="w3-bar-block">
@@ -72,7 +63,7 @@ body {font-size:14px;}
     <a href="./Tutor.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tutorial</a> 
     <a href="./Dow30.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DOW 30</a>	
     <a href="./Services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services/Contact</a> 	
-    <a href="./Disclaimer.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Disclaimer</a> 
+    <a href="./About.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
   </div>
 </nav>
 
@@ -98,20 +89,15 @@ body {font-size:14px;}
   </div>
 
 <br><br>
-		<p style="text-align: left; padding-left: 30px;"> 
-		<i>Your weekly appointment.<br>
+<h1 class="w3-large w3-text-red"><br><b><i>Your weekly appointment.<br>
 		The spectral analysis of the DJ 30 components, a preview straight from our proprietary system. 
-		</i>
-		</p> 
-		
-
-
+		</i></b></h1>
 
 		<p style="text-align: left; padding-left: 30px;"> As of February 7, 2025 <br>
 		</p>
 	
 		<a href="#" data-toggle="tooltip" style="text-align: left; padding-left: 30px; " title="A financial experiment:
-		What would be the result of going long on those whose cycle breaks on the rise, and short on the others. :)">DJI30 Index... Beat it...<br><br></a>
+		What would be the result of going long on those whose cycle breaks on the rise, and short on the others.">DJI30 Index... Beat it...<br><br></a>
 		
 		
   <div class="w3-row-padding">
@@ -127,9 +113,13 @@ body {font-size:14px;}
 			<div style="margin-left:20px" >			
 				<center>
 				<img src="./ImgDJ30/amzn.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
-				</center>						
+				</center>					
 			</div>	
-			<br>
+			
+			<div style="margin-left:50px" >
+			<p id="pli">Down<br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -147,7 +137,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/axp.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Daily near for an up reversal<br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -168,7 +162,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/amgn.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Daily: possible Phase shift up<br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -186,7 +184,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/aapl.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Very cautious <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -207,7 +209,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/ba.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Is approaching the downward trend<br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -225,7 +231,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/cat.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Very close to an upward confirmation<br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -246,7 +256,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/csco.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Possible Phase shift up <br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -264,7 +278,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/cvx.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Very close to an upward confirmation <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -285,7 +303,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/gs.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Daily: temporarily pause expected. Mid term: positive <br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -303,7 +325,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/hd.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Mid term: still positive <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -324,7 +350,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/hon.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Negative<br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -342,7 +372,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/ibm.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Positive<br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -363,7 +397,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/jnj.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Mid term: Positive<br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -380,8 +418,11 @@ body {font-size:14px;}
 				<center>
 				<img src="./ImgDJ30/ko.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
-			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Mid term: Positive<br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -402,7 +443,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/jpm.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Daily: possible Phase shift up. Mid term: Positive<br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -420,7 +465,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/mcd.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Mid term: Positive<br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -441,7 +490,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/mmm.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Very cautious<br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -459,7 +512,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/mrk.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Very close to an upward confirmation <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -480,8 +537,12 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/msft.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
-		</div>	
+
+			<div style="margin-left:50px" >
+			<p id="pli">Very close to an upward confirmation <br></p>
+			</div>
+			
+			</div>	
 	</div>	
 
     <div class="w3-col m6 w3-margin-bottom">	
@@ -498,8 +559,12 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/nke.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
-		</div>	
+
+			<div style="margin-left:50px" >
+			<p id="pli">Negative <br></p>
+			</div>
+			
+			</div>	
 	</div>		
 	
   </div>
@@ -519,7 +584,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/pg.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Mid term: positive <br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -537,7 +606,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/shw.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Daily: possible Phase shift up. Mid term: positive <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -558,7 +631,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/trv.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Positive <br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -576,7 +653,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/unh.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Mid term: Positive <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -597,7 +678,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/crm.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Cautious <br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -614,8 +699,11 @@ body {font-size:14px;}
 				<center>
 				<img src="./ImgDJ30/nvda.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
-			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Cautious <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -636,7 +724,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/vz.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Positive <br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -654,7 +746,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/v.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Active Phase shift up  <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
@@ -675,7 +771,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/wmt.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Positive  <br></p>
+			</div>
+			
 		</div>	
 	</div>	
 
@@ -693,7 +793,11 @@ body {font-size:14px;}
 				<img src="./ImgDJ30/dis.jpg" class="w3-image" width="80%"  onclick="onClick(this)" />
 				</center>						
 			</div>	
-			<br>
+
+			<div style="margin-left:50px" >
+			<p id="pli">Cautious  <br></p>
+			</div>
+			
 		</div>	
 	</div>		
 	
